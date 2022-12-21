@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Controle if-else</title>
+
+
+    <!-- CSS INTERNO -->
+    <style>
+        body {background-color: lightgray;}
+        pre {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="display-4 text-warning"> Controle- if-else </h1>
+
+    <pre>
+        <code>
+            // Calculo de IMC.
+
+/**var peso = parseFloat(prompt("Informe seu peso"));
+
+var altura = parseFloat(prompt("Informe sua altura"));
+
+
+imc = peso / (altura**2);
+
+console.log(imc.toFixed(2));
+
+document.write(`Seu imc esta ${imc.toFixed(2)}`);
+
+// Controle if-else
+
+if ( imc < 19) {
+    console.log("Abaixo do Peso");
+
+} else if (imc >= 19 && imc < 25) {
+    console.log(" Peso Normal");
+
+} else if (imc >= 25 && imc < 30)  {
+    console.log(" Sobrepeso");
+
+} else if (imc >= 30 && imc < 40)  {
+    console.log(" Obesidade - I");
+} else {
+    console.log(" Obesidade - II")
+}*/
+
+// ------------------------------
+
+// CALCULAR MEDIA DE NOTAS COM TERNARIO
+
+// var nta1 = parseFloat(prompt("Informe sua 1ª NotaBimestral","ex:0.0"));
+
+// var nta2 = parseFloat(prompt("Informe sua 2ª NotaBimestral","ex:0.0"));
+
+// var nta3 = parseFloat(prompt("Informe sua 3ª NotaBimestral","ex:0.0"));
+
+// var nta4 = parseFloat(prompt("Informe sua 4ª NotaBimestral","ex:0.0"));
+
+//  const p0 = parseFloat (0.5);
+//  const p1 = parseFloat (0.7);
+//  const p2 = parseFloat (1.0);
+//  const p3 = parseFloat (1.5);
+
+
+// var mediaBi = (((nta1*p0)+(nta2*p1)+(nta3*p2)+(nta4*p3)))/4;
+
+// var media = (mediaBi>=7)?"aprovado :)":"reprovado :(";
+
+// console.log(` Você foi ${media}`);
+// console.log(`Com media ${mediaBi.toFixed(2)}`);
+
+// ------------------------------
+
+        </code>
+    </pre>
+
+
+
+    <pre>
+        <code>
+            // CALCULAR MEDIA DE NOTAS IF-ELSE
+
+var nta1 = parseFloat(prompt("Informe sua 1ª NotaBimestral", "Ex:0.0"));
+
+var nta2 = parseFloat(prompt("Informe sua 2ª NotaBimestral", "Ex:0.0"));
+
+var nta3 = parseFloat(prompt("Informe sua 3ª NotaBimestral", "Ex:0.0"));
+
+var nta4 = parseFloat(prompt("Informe sua 4ª NotaBimestral", "Ex:0.0"));
+
+var faltas = Number(prompt("Informe qtd de faltas","Ex: 0"))
+
+const p0 = parseFloat(0.5);
+const p1 = parseFloat(0.7);
+const p2 = parseFloat(1.0);
+const p3 = parseFloat(1.5);
+
+
+var mediaBi = (((nta1 * p0) + (nta2 * p1) + (nta3 * p2) + (nta4 * p3))) / 4;
+
+// CONDIÇÃO IF-ELSE
+if (mediaBi >= 7 && faltas < 10) {
+    
+    console.log(`Aprovado com media ${mediaBi.toFixed(2)} e ${faltas} faltas`);
+
+} else if (mediaBi >= 6 && mediaBi < 6.9 && faltas < 10) {
+    
+    console.log(`Recuperação com media ${mediaBi.toFixed(2)} e ${faltas} faltas`);
+    
+} else {
+    console.log(`Reprovado com media ${mediaBi.toFixed(2)} e ${faltas} faltas`);
+}
+
+        </code>
+    </pre>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
